@@ -1,29 +1,13 @@
 /* SERVICIOS */
 
-.carousel-inner {
-  box-shadow: $shadow;
-}
-
-.carousel-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 75vh;
-  min-height: 300px;
-  @include card-pos();
-  @include respond-to("xsm") {
-    height: 50vh;
-  }
-}
-
 @include respond-to("xsm") {
   .servicios {
     .servicios--img1 {
       height: 100px;
     }
     .servicios__description {
-      height: 20%;
-      top: 4rem;
+      height: 30%;
+      bottom: 0%;
       padding-bottom: 0.5rem;
       h3 {
         font-size: 0.5rem;
@@ -101,9 +85,6 @@
     line-height: 1rem;
     color: $textoprimario;
     background-color: rgba(0, 0, 0, 0.5);
-
-    h3 {
-    }
   }
 }
 
@@ -134,6 +115,7 @@
     color: white;
     overflow: hidden;
     transition: transform $tiempo-largo ease;
+    padding: 0 !important;
 
     img {
       z-index: 1;
@@ -166,7 +148,7 @@
       opacity: 0;
       transition: opacity $tiempo-largo ease-in-out;
       background-color: rgba(0, 0, 0, 0.75);
-      width: auto;
+
       font-weight: 400;
       letter-spacing: 0.05rem;
 
