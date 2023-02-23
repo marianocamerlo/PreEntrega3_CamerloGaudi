@@ -1,0 +1,229 @@
+/* SERVICIOS */
+
+.carousel-inner {
+  box-shadow: $shadow;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  min-height: 300px;
+  @include card-pos();
+  @include respond-to("xsm") {
+    height: 50vh;
+  }
+}
+
+@include respond-to("xsm") {
+  .servicios {
+    .servicios--img1 {
+      height: 100px;
+    }
+    .servicios__description {
+      height: 20%;
+      top: 4rem;
+      padding-bottom: 0.5rem;
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@include respond-to("sm") {
+  .servicios {
+    .servicios--img1 {
+      height: 250px;
+    }
+    .servicios__description {
+      height: 30%;
+      h3 {
+        font-size: 0.75rem;
+      }
+      p {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@include respond-to("md") {
+  .servicios {
+    .servicios--img1 {
+      height: 400px;
+    }
+    .servicios__description {
+      height: 27.5%;
+
+      h3 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.servicios {
+  .servicios--img1 {
+    background-image: url(../imgs/arq/arq-bg.jpg);
+    @include card-pos();
+  }
+
+  .servicios--img2 {
+    background-image: url(../imgs/arq/int-bg.jpg);
+    @include card-pos();
+  }
+
+  .servicios--img3 {
+    background-image: url(../imgs/arq/render-bg.jpeg);
+    @include card-pos();
+  }
+
+  .servicios--img4 {
+    background-image: url(../imgs/arq/stage-bg.png);
+    @include card-pos();
+  }
+
+  .servicios__description {
+    overflow: hidden;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    padding-bottom: auto;
+    line-height: 1rem;
+    color: $textoprimario;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    h3 {
+    }
+  }
+}
+
+/* TARJETAS */
+.cards-container {
+  height: 25%;
+  overflow: hidden;
+
+  .gallery {
+    align-self: center;
+    @include respond-to("sm") {
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: $textosecundario;
+      @include title(40%);
+
+      @media (max-width: "md") {
+        &:before {
+          height: 38%;
+        }
+      }
+    }
+  }
+
+  .cards {
+    color: white;
+    overflow: hidden;
+    transition: transform $tiempo-largo ease;
+
+    img {
+      z-index: 1;
+    }
+
+    &:hover,
+    &:focus-within {
+      z-index: 3;
+
+      @include respond-to("xsm") {
+        transform: scale(1.25);
+      }
+      @include respond-to("sm") {
+        transform: scale(1.2);
+      }
+      @include respond-to("md") {
+        transform: scale(1.2);
+      }
+    }
+
+    &:hover .card__info {
+      opacity: 1;
+      transition-delay: 0.1s;
+    }
+    .card__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity $tiempo-largo ease-in-out;
+      background-color: rgba(0, 0, 0, 0.75);
+      width: auto;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
+
+      @include respond-to("xsm") {
+        height: 150px;
+        font-size: smaller;
+      }
+      @include respond-to("sm") {
+        height: 175px;
+        font-size: small;
+      }
+      @include respond-to("md") {
+        height: 225px;
+        font-size: smaller;
+      }
+      @include respond-to("lg") {
+        height: 300px;
+      }
+    }
+  }
+  .img1 {
+    background-image: url(../imgs/shows/fiesta3.png);
+    @include card-pos();
+  }
+
+  .img2 {
+    background-image: url(../imgs/arq/casa8.jpg);
+    @include card-pos();
+  }
+
+  .img3 {
+    background-image: url(../imgs/arq/casa7.jpg);
+    @include card-pos();
+  }
+
+  .img4 {
+    background-image: url(../imgs/arq/casa6.jpg);
+    @include card-pos();
+  }
+
+  .img5 {
+    background-image: url(../imgs/arq/edificio.jpg);
+    @include card-pos();
+  }
+
+  .img6 {
+    background-image: url(../imgs/arq/casa2.jpg);
+    @include card-pos();
+  }
+
+  .img7 {
+    background-image: url(../imgs/arq/casa5.jpg);
+    @include card-pos();
+  }
+
+  .img8 {
+    background-image: url(../imgs/shows/fiesta1.png);
+    @include card-pos();
+  }
+}

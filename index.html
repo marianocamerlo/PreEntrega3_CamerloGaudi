@@ -27,7 +27,7 @@
     <!-- FAVICON -->
     <link
       rel="shortcut icon"
-      href="imgs/logos-iconos/logo_blanco.png"
+      href="./imgs/logos-iconos/logo_blanco.png"
       type="image/x-icon"
     />
 
@@ -40,7 +40,7 @@
     />
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="bg-black">
@@ -52,7 +52,7 @@
           <a class="navbar-brand logo ms-4" href="index.html"
             ><img
               class="img"
-              src="imgs/Logos-Iconos/logo_blanco.png"
+              src="./imgs/Logos-Iconos/logo_blanco.png"
               alt="logo"
               width="90"
             />
@@ -88,7 +88,7 @@
                 <a
                   class="nav-link"
                   aria-current="page"
-                  href="pages/nosotros.html"
+                  href="./pages/nosotros.html"
                   >Nosotros</a
                 >
               </li>
@@ -98,7 +98,7 @@
                 <a
                   class="nav-link"
                   aria-current="page"
-                  href="pages/portfolio.html"
+                  href="./pages/portfolio.html"
                   >Portfolio</a
                 >
               </li>
@@ -108,14 +108,14 @@
                 <a
                   class="nav-link"
                   aria-current="page"
-                  href="pages/contacto.html"
+                  href="./pages/contacto.html"
                   >Contacto</a
                 >
               </li>
 
               <!-- FAQ -->
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="pages/faq.html"
+                <a class="nav-link" aria-current="page" href="./pages/faq.html"
                   >FAQ</a
                 >
               </li>
@@ -168,109 +168,53 @@
 
     <main>
       <!-- SERVICIOS -->
-      <section class="container bg-black mb-5 py-3">
-        <div class="carousel">
-          <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner mx-auto">
-              <!-- ARQ -->
-              <div class="carousel-item active" data-bs-interval="2500">
-                <a class="my-auto py-5" href="pages/contacto.html"
-                  ><img
-                    class="d-block img-fluid"
-                    src="imgs/Arq/arq-bg.jpg"
-                    alt="home"
-                  />
-                </a>
-                <div
-                  class="carousel-caption bg-black user-select-none text-break lead"
-                  style="--bs-bg-opacity: 0.5"
-                >
-                  <h2 class="h3 text-center text-uppercase">
-                    diseño arquitectónico
-                  </h2>
-                  <p class="fs-6 text-center d-none d-sm-block lh-1 textwrap">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias, repellendus.
-                  </p>
-                </div>
-              </div>
+      <div class="servicios container my-5">
+        <div class="row">
+          <!-- ARQ -->
+          <div class="img-fluid col-3 servicios--img1">
+            <div class="servicios__description text-center">
+              <h3 class="text-uppercase">diseño arquitectónico</h3>
+              <p class="text-center d-none d-sm-block lh-1 textwrap">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                quo sed tempora?
+              </p>
+            </div>
+          </div>
 
-              <!-- INT -->
-              <div class="carousel-item" data-bs-interval="2500">
-                <a class="my-auto py-5" href="pages/contacto.html"
-                  ><img
-                    class="d-block img-fluid"
-                    src="imgs/Arq/int-bg.jpg"
-                    alt="home"
-                  />
-                </a>
-                <div
-                  class="carousel-caption bg-black user-select-none text-break lead"
-                  style="--bs-bg-opacity: 0.5"
-                >
-                  <h2 class="h3 text-center text-uppercase">
-                    diseño de interiores
-                  </h2>
-                  <p class="fs-6 text-center d-none d-sm-block lh-1 textwrap">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias, repellendus.
-                  </p>
-                </div>
-              </div>
+          <!-- INT -->
+          <div class="img-fluid col-3 servicios--img2">
+            <div class="servicios__description text-center">
+              <h3 class="text-uppercase">interiorismo</h3>
+              <p class="text-center d-none d-sm-block lh-1 textwrap">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                quo sed tempora?
+              </p>
+            </div>
+          </div>
 
-              <!-- VIS -->
-              <div class="carousel-item" data-bs-interval="2500">
-                <a class="my-auto py-5" href="pages/contacto.html"
-                  ><img
-                    class="d-block img-fluid"
-                    src="imgs/Arq/render-bg.jpeg"
-                    alt="home"
-                  />
-                </a>
-                <div
-                  class="carousel-caption bg-black user-select-none text-break lead"
-                  style="--bs-bg-opacity: 0.5"
-                >
-                  <h2 class="h3 text-center text-uppercase">
-                    visualización 3d
-                  </h2>
-                  <p class="fs-6 text-center d-none d-sm-block lh-1 textwrap">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias, repellendus.
-                  </p>
-                </div>
-              </div>
+          <!-- VIS -->
+          <div class="img-fluid col-3 servicios--img3">
+            <div class="servicios__description text-center">
+              <h3 class="text-uppercase">visualización 3d</h3>
+              <p class="text-center d-none d-sm-block lh-1 textwrap">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                quo sed tempora?
+              </p>
+            </div>
+          </div>
 
-              <!-- ESC -->
-              <div class="carousel-item" data-bs-interval="2500">
-                <a class="my-auto py-5" href="pages/contacto.html"
-                  ><img
-                    class="d-block img-fluid"
-                    src="imgs/Arq/stage-bg.png"
-                    alt="home"
-                  />
-                </a>
-                <div
-                  class="carousel-caption bg-black user-select-none text-break lead"
-                  style="--bs-bg-opacity: 0.5"
-                >
-                  <h2 class="h3 text-center text-uppercase">
-                    diseño escenográfico
-                  </h2>
-                  <p class="fs-6 text-center d-none d-sm-block lh-1 textwrap">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias, repellendus.
-                  </p>
-                </div>
-              </div>
+          <!-- ESC -->
+          <div class="img-fluid col-3 servicios--img4">
+            <div class="servicios__description text-center">
+              <h3 class="text-uppercase">diseño escenográfico</h3>
+              <p class="text-center d-none d-sm-block lh-1 textwrap">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                quo sed tempora?
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- GALERIA -->
       <div class="cards-container img-thumbnail container mt-3 p-5 bg-white">

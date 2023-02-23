@@ -1,0 +1,30 @@
+@mixin card-pos {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@mixin color-hov-sl {
+  transition: color $tiempo-corto ease-in-out;
+}
+@mixin color-hov-ft {
+  transition: color $tiempo-largo ease-in-out;
+}
+
+@mixin title($h) {
+  position: relative;
+  z-index: 10;
+  padding: 0 5px;
+  display: inline-block;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: $h;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $colorprimario;
+    z-index: -5;
+  }
+}

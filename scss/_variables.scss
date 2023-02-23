@@ -1,0 +1,39 @@
+/////paleta/////
+$colorprimario: #1f78ff;
+$colorprimario-l: #66a3ff;
+$colorsecundario: #214263;
+$colorterciario: #ff411f;
+$colorterciario-l: #ff7d66;
+$fondoprimario: #000000;
+$fondosecundario: #ffffff;
+$textoprimario: #ffffff;
+$textosecundario: #000000;
+$textoterciario: #838383;
+
+/////sombra/////
+$shadow: 0px 5px 1px 0px $colorsecundario;
+
+/////transformaciones/////
+$tiempo-corto: 0.25s;
+$tiempo-largo: 0.5s;
+
+$breakpoints: (
+  "xsm": (
+    min-width: 0px,
+  ),
+  "sm": (
+    min-width: 576px,
+  ),
+  "md": (
+    min-width: 768px,
+  ),
+  "lg": (
+    min-width: 992px,
+  ),
+  "xl": (
+    min-width: 1200px,
+  ),
+  "xxl": (
+    min-width: 1400px,
+  ),
+);

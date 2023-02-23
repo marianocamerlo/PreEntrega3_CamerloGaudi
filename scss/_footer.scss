@@ -1,0 +1,44 @@
+/* FOOTER */
+footer {
+  background-color: $colorsecundario;
+  .container {
+    .footer__social {
+      display: flex;
+      list-style: none;
+      width: max-content;
+      transform: translateX(-25%);
+
+      &--icon {
+        transform: translateY(50%);
+        margin-left: 1.5rem;
+      }
+    }
+
+    svg {
+      color: $textoprimario;
+      @include color-hov-ft();
+      &:hover,
+      &:focus-within {
+        color: $colorprimario;
+      }
+    }
+  }
+}
+
+.footer__text {
+  display: flex;
+  color: #cdcdcd;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.link {
+  color: $textoprimario;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include color-hov-ft();
+  &:hover,
+  &:focus-within {
+    color: $colorprimario;
+  }
+}

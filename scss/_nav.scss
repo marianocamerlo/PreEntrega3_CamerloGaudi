@@ -1,0 +1,80 @@
+/* nav */
+nav {
+  .logo {
+    display: flex;
+    position: relative;
+    transition: transform $tiempo-largo ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: $colorprimario;
+      height: 2rem;
+      width: 0.1rem;
+      transform: translate(-0.5rem, 0.5rem);
+    }
+  }
+
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        margin-left: 1rem;
+
+        .active {
+          background: $colorprimario;
+          border-radius: 0.25rem;
+          z-index: 5;
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    overflow: hidden;
+    transition: $tiempo-largo ease;
+    text-transform: uppercase;
+
+    a {
+      @include respond-to("xsm") {
+        font-size: 0.75rem;
+      }
+      @include respond-to("sm") {
+        font-size: 1rem;
+      }
+      @include respond-to("md") {
+        font-size: 1.25rem;
+      }
+    }
+
+    &:focus {
+      letter-spacing: 0.1rem;
+      font-weight: 300;
+      color: $textoterciario;
+      white-space: nowrap;
+      transition: $tiempo-largo;
+    }
+    &:hover,
+    &:focus-within {
+      background: $colorsecundario;
+      color: $textoprimario;
+      z-index: -1;
+      border-radius: 0.25rem;
+    }
+  }
+
+  .icon {
+    order: 2;
+    margin-left: 1.5rem;
+    color: $colorsecundario;
+    @include color-hov-ft();
+
+    &:hover {
+      color: $colorprimario;
+    }
+  }
+}

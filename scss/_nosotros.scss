@@ -1,0 +1,24 @@
+.section__title {
+  color: $textoprimario;
+  @include title(40%);
+}
+
+.section__subtitle {
+  color: $textoprimario;
+}
+
+.section__text {
+  padding: 2rem;
+  width: fit-content;
+  letter-spacing: -0.05rem;
+  line-height: 1.75rem;
+  color: $textoprimario;
+}
+
+.section__text--b {
+  color: $textoprimario;
+  padding: 0.2rem;
+  background-color: $colorsecundario;
+  border-radius: 0rem;
+  letter-spacing: -0.03rem;
+}

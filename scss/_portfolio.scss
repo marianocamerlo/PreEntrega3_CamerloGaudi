@@ -1,0 +1,12 @@
+.portfolio {
+  font-size: 2rem;
+  @include respond-to("xsm") {
+    font-size: 1.5rem;
+  }
+  @include respond-to("sm") {
+    font-size: 5rem;
+  }
+  @include respond-to("md") {
+    font-size: 5rem;
+  }
+}
